@@ -1,0 +1,27 @@
+==Player Character==
+
+model image: chibi princess
+weapon: swing a scepter that exudes magical energy
+
+*movement: move in worldspace according to axis input
+	translate is insufficient and will move through walls. Find better command
+
+*face direction pressed
+	*rotate by setting quaternion to movement direction
+
+special weapon button		
+	while holding special weapon button, disable movement?
+		yes, but refine that to weapons that require it
+
+camera follows player in fixed worldspace
+
+==special weapon behaviors==
+lets not just copy Zelda here, but...
+
+fairy
+	hold button to activate
+	disables player movement
+	moves similarly to player character: use axis to move and face that direction
+	collects enemy drops
+	hits switches flagged for it
+
